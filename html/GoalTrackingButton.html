@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/GoalTracking.css">
+    <link rel="stylesheet" href="../css/Themes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Goal Tracking</title>
+</head>
+<body>
+    <a id="goBack" href="#">
+        Back
+      </a>
+    <div class="container">
+        <h2>Set Your Goals</h2>
+        <form id="goalTrackingForm">
+            <!-- Display Current Goals -->
+            <div id="currentGoals">
+                <h3>Current Goals</h3>
+                <!-- Updated to include completion percentage display -->
+                <p id="dailyGoalDisplay">Daily Goal: 0 Hours - 0% Complete</p>
+                <p id="weeklyGoalDisplay">Weekly Goal: 0 Hours - 0% Complete</p>
+            </div>
+            <div class="form-group">
+                <label for="hoursPerDay">Hours per Day:</label>
+                <input type="number" id="hoursPerDay" min="0" max="24" required>
+            </div>
+            <div class="form-group">
+                <label for="hoursPerWeek">Hours per Week:</label>
+                <input type="number" id="hoursPerWeek" min="0" max="168" required>
+            </div>
+            <button type="submit">Save Goals</button>
+            <button type="button" id="clearGoals">Clear Goals</button>
+            <button type="button" id="adjustGoals">Adjust Goals</button>
+        </form>
+        <p id="goalStatusMessage"></p>
+        
+    </div>
+    <script src="../js/GoalTracking.js"></script>
+    <script src="../js/Settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+  width: 320px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Overall container for the achievements */
+.container {
+  max-width: 800px;
+  height: 540px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: show;
+  border: 1px solid #e6e6e6; /* Add scrollbar if content exceeds the height */
+}
+  
+  h2 {
+    /*background: linear-gradient(135deg, #6e8efb, #a777e3);*/
+    background-color: #5d5fef;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+  
+  .session {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .session:last-child {
+    border-bottom: none;
+  }
+  
+  .sessionTopic {
+    display: block;
+    padding: 12px 20px;
+    color: #62677b;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sessionDuration {
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  /* Additional styles for aesthetics */
+  p {
+    color: #666;
+  }
+  
+  #goBack {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #6e8efb;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above the button */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-weight: 600;
+  }
+  
+  #goBack:hover {
+    background-color: #5d5fef;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+  
+    #goBack {
+      padding: 8px 20px;
+    }
+  }
+  
+  
+  #intervalSpan, #sessionDuration {
+    font-weight: 600;
+    color: #5d5fef;
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      border-radius: 5px;
+    }
+  
+    input[type="text"], button {
+      width: 100%;
+    }
+  }
+  /* Responsive Adjustments */
+    @media (max-width: 480px) {
+    .container {
+      width: 95%;
+      margin: 10px auto;
+      padding: 0;
+      border-radius: 5px;
+    }
+}
+
+.color-key {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly */
+  flex-wrap: wrap;
+  padding: 10px; /* Adds padding around the color key container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+  border-radius: 8px; /* Optional: rounds the corners */
+  background-color: #fff; /* Match the color key background to your site's color scheme */
+  margin: 20px auto; /* Centers the color key and adds margin above and below */
+  width: 80%; /* Adjust the width as needed */
+}
+
+.color-key .key {
+  display: flex;
+  align-items: center;
+  margin: 5px; /* Adjusts margin for each key */
+  font-size: 0.8em; /* Adjust font size as needed */
+}
+
+.color-key .color-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #ddd; /* Adds a border around the color box */
+}
+
+@media (max-width: 768px) {
+  .color-key {
+    width: 95%; /* Full width on smaller screens */
+    padding: 5px; /* Smaller padding for smaller screens */
+  }
+  .color-key .key {
+    margin: 3px; /* Smaller margin for smaller screens */
+  }
+}

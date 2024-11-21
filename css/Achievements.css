@@ -1,0 +1,131 @@
+/* Overall styling */
+body {
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Overall container for the achievements */
+.container {
+  width: 450px;
+  height: 540px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e6e6e6; /* Add scrollbar if content exceeds the height */
+}
+
+/* Styling for the achievement list */
+#achievementsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+/* Individual achievements */
+#achievementsList li {
+  background-color: #f0f0f0; /* Default background for unachieved */
+  color: #495057;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #007bff; /* Blue border for unachieved */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+input[type='checkbox'] {
+  display: none;
+}
+
+/* Create a custom checkmark */
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  border: 1px solid #ccc; /* Gray border for unchecked */
+}
+
+/* Style the checkmark when the li has class .achieved */
+.achieved .checkmark {
+  border-color: #28a745; /* Green border color for achieved */
+}
+
+/* Create the checkmark symbol when the checkbox is checked */
+.achieved .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Set the background for the custom checkmark symbol when the checkbox is checked */
+.achieved input[type='checkbox']:checked ~ .checkmark {
+  background-color: #28a745;
+}
+
+/* Achieved achievement styling */
+#achievementsList li.achieved {
+  background-color: #d4edda; /* Light green background for achieved */
+  border-left-color: #28a745; /* Green border for achieved */
+}
+
+/* Hover effect for list items */
+#achievementsList li:hover {
+  background-color: #dee2e6;
+  transform: scale(1.02);
+}
+
+/* Icon for achievements */
+#achievementsList li::before {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+/* 'Go Back' button styling */
+#goBack {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #6e8efb;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space above the button */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-weight: 600;
+}
+
+#goBack:hover {
+  background-color: #5d5fef;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .achievements-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #goBack {
+    padding: 8px 20px;
+  }
+}

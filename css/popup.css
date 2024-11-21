@@ -1,0 +1,101 @@
+body {
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 450px;
+  height: 540px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  border: 1px solid #e6e6e6;
+}
+
+h2 {
+  /*background: linear-gradient(135deg, #6e8efb, #a777e3);*/
+  background-color: #587ef4;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+.menu li {
+  border-top: 1px solid #e6e6e6;
+}
+
+.menu li:first-child {
+  border-top: none;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #62677b;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover, .menu a:focus {
+  background-color: #f7f8fc;
+  color: #5d5fef;
+}
+
+.menu a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #5d5fef;
+  transition: width 0.3s;
+  width: 0;
+  margin-top: 5px;
+}
+
+.menu a:hover::after, .menu a:focus::after {
+  width: 100%;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 0;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}

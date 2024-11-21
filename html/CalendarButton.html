@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Calendar</title>
+  <link rel="stylesheet" href="../css/CalendarButton.css">
+  <link rel="stylesheet" href="../css/Themes.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a id="goBack" href="#">
+    Back
+  </a>
+  <h2>Your Calendar</h2>
+
+  <div id="taskReminder">
+    <h3>Task Reminder</h3>
+    <ul id="taskList"></ul>
+  </div>
+
+  <div id="calendar"></div>
+  <button id="prevMonthBtn">Previous Month</button>
+  <button id="nextMonthBtn">Next Month</button>
+  <div>Current Month: <span id="currentMonth"></span></div>
+  <div>Current Year: <span id="currentYear"></span></div>
+
+  <form id="eventForm">
+    <label for="eventDate">Date:</label>
+    <input type="date" id="eventDate" required>
+    <label for="eventTime">Time:</label>
+    <input type="time" id="eventTime" required>
+    <label for="eventDescription">Description:</label>
+    <input type="text" id="eventDescription" required>
+    <button type="submit">Add Event</button>
+  </form>
+
+  <script src="../js/CalendarButton.js"></script>
+  <script src="../js/Settings.js"></script>
+</body>
+</html>
+

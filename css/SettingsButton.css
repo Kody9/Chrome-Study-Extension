@@ -1,0 +1,247 @@
+body {
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Overall container for the achievements */
+.container {
+  width: 450px;
+  height: 540px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e6e6e6; /* Add scrollbar if content exceeds the height */
+}
+
+/* Dark theme styles */
+body.dark-theme {
+background-color: #333;
+color: #fff;
+}
+
+.settings-container {
+max-width: 360px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+
+.setting-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.toggle-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+margin: 0;
+}
+
+.toggle-input {
+background-color: #333;
+color: #fff;
+}
+
+.toggle-slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #dfdfdf;
+transition: .4s;
+border-radius: 24px;
+}
+
+.toggle-slider:before {
+position: absolute;
+content: "OFF";
+height: 20px;
+width: 20px;
+left: 2px;
+bottom: 2px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+text-align: center;
+line-height: 20px;
+font-size: 10px;
+}
+
+.toggle-input:checked + .toggle-slider:before {
+transform: translateX(26px);
+content: "ON";
+background-color: #333;
+color: #fff;
+}
+
+.toggle-input:checked + .toggle-slider {
+background-color: #5d5fef;
+}
+
+.toggle-slider:before {
+background-color: #5d5fef; 
+}
+
+.toggle-input:checked + .toggle-slider:before {
+color: white;
+}
+
+
+#goBack {
+  display: left;
+  align-items: center;
+  color: #62677b;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#goBack svg {
+  margin-right: 8px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+
+input[type="text"] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background-color: #587ef4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #587ef4;
+}
+
+p {
+  color: #62677b;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+#goBack {
+  align-self: flex-start;
+  display: left;
+  padding: 10px 25px;
+  background-color: #6e8efb;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space above the button */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-weight: 600;
+}
+
+#goBack:hover {
+  background-color: #5d5fef;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+  #goBack {
+    padding: 8px 20px;
+  }
+}
+
+
+#intervalSpan, #sessionDuration {
+  font-weight: 600;
+  color: #5d5fef;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+  }
+}
+
+#notifPreference {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#notifPreference label {
+  margin-right: 10px; /* Add some space between the label and the dropdown */
+}
+
+#notifSelect {
+  flex: 1; /* Take up remaining space */
+  width: auto; 
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+
+#themeSelection {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#themeSelection label {
+  margin-right: 10px; /* Add some space between the label and the dropdown */
+}
+
+#themeSelect {
+  flex: 1; /* Take up remaining space */
+  width: auto; 
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+}

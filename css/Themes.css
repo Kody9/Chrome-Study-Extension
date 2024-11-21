@@ -1,0 +1,110 @@
+/* Dark Theme */
+.dark {
+    background-color: #121212; /* Dark background */
+    color: #909090; /* Light text color */
+  }
+  
+  .dark table {
+    border-color: #b3b3b31b;
+  }
+  
+  .dark table th {
+    background-color: #000000;
+    color: #ffffff; 
+  }
+
+  .dark button,
+  .dark .show-hide-btn, 
+  .dark #save-btn,
+  .dark .add-flashcard-con button,
+  .dark #achievementsList li,
+  .dark #prevMonthBtn,
+  .dark #nextMonthBtn,
+  .dark #goBack,
+  .dark #eventForm button[type="submit"],
+  .dark .delete-task {
+    background-color: #4c7caf; /* Blue color for buttons */
+    color: #ffffff;
+  }
+
+/* Warm Theme */
+.warm {
+    background-color: #ffe5b4; /* Light peach background */
+    color: #5d5d5d; /* Dark text color */
+  }
+  
+  .warm table {
+    border-color: #5d5d5d; /* Dark border color for table */
+  }
+
+  .warm .toggle-input:checked + .toggle-slider,
+  .warm .toggle-slider:before,
+  .warm .toggle-input:checked,
+  .warm button,
+  .warm .show-hide-btn, 
+  .warm #save-btn,
+  .warm .add-flashcard-con button,
+  .warm #achievementsList li,
+  .warm #prevMonthBtn,
+  .warm #nextMonthBtn,
+  .warm #goBack,
+  .warm #eventForm button[type="submit"],
+  .warm .delete-task {
+    background-color: #ffa500; /* Orange color for buttons, matches or complements the add event button */
+    color: #ffffff; /* White text color for buttons */
+  }
+  
+  .warm .event {
+    background-color: #ffdab9; /* Light coral background for events */
+    color: #5d5d5d; /* Dark text color for events */
+    border-color: #5d5d5d; /* Dark border color for events */
+  }
+  
+  .warm .delete-task {
+    background-color: #ff6961; /* Red color for delete buttons */
+  }
+
+  .warm button:hover,
+  .warm #prevMonthBtn:hover,
+  .warm #nextMonthBtn:hover {
+    background-color: #ff8c00; /* Darker orange color for hover effect */
+}
+
+.warm h2 {
+  background-color: #ffa500; /* Orange background color for h2 */
+  color: #ffffff; /* White text color for h2 */
+}
+
+.warm h1 {
+  background-color: #ffa500; /* Orange background color for h2 */
+  color: #ffffff; /* White text color for h2 */
+}
+
+/* Default Theme */
+.defualt {
+    background-color: #f7f8fc;
+    color: #333;
+  }
+  
+  .defualt table {
+    border-color: #bb18181b;
+  }
+  
+  .default table th {
+    padding: 10px;
+    border: 1px solid #ddd; 
+  }
+  
+  .default button,
+  .default .show-hide-btn, 
+  .default #save-btn,
+  .default .add-flashcard-con button,
+  .default #achievementsList li,
+  .default #prevMonthBtn,
+  .default #nextMonthBtn,
+  .default #goBack,
+  .default #eventForm button[type="submit"],
+  .default .delete-task {
+    background-color: #4c7caf; /* Blue color for buttons */
+    color: #ffffff; /* Light text color for buttons */
+  }

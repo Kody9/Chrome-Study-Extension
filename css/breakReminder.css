@@ -1,0 +1,98 @@
+body {
+  width: 300px; /* Adjusted width to match your other pages */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  margin: 0 auto; /* Centers the body within the page */
+  padding: 10px; /* Reduced padding for more space */
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%; /* Set container width to 100% of the body width */
+  max-width: none; /* Remove max-width if not needed, or adjust it appropriately */
+  height: 300px; /* Keep the height as it is if that's desired */
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+
+h2 {
+  /*background: linear-gradient(135deg, #6e8efb, #a777e3);*/
+  background-color: #587ef4;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+button {
+  width: 100%; /* Full width */
+  padding: 10px;
+  background-color: #6e8efb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5d5fef;
+}
+
+#goBack {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #6e8efb;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-weight: 600;
+}
+
+#goBack:hover {
+  background-color: #5d5fef;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#currentIntervalDisplay {
+  font-weight: bold;
+}
+
+.status, .reminderOff, .reminderOn {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+  .container {
+      width: 100%;
+      height: 60%;
+      border-radius: 5px;
+  }
+  h1 {
+      font-size: 1.5rem; 
+  }
+  button {
+      padding: 8px 20px;
+  }
+}

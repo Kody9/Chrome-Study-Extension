@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Themes.css">
+  <link rel="stylesheet" href="../css/ArchivedSessions.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Archive Page</title>
+  <script src="../dist/bundle.js"></script>
+</head>
+<body>
+  <a id="goBack" href="#">
+    Back
+  </a>
+  <div class="container">
+    <h2>Archived Sessions</h2>
+    <canvas id="myChart"></canvas>
+    <div class="color-key">
+      <p>Color Key</p>
+      <div class="key"><span class="color-box" style="background-color: rgba(255, 99, 132, 0.2);"></span> Sunday</div>
+      <div class="key"><span class="color-box" style="background-color: rgba(54, 162, 235, 0.2);"></span> Monday</div>
+      <div class="key"><span class="color-box" style="background-color: rgba(255, 206, 86, 0.2);"></span> Tuesday</div>
+      <div class="key"><span class="color-box" style="background-color: rgba(75, 192, 192, 0.2);"></span> Wednesday</div>
+      <div class="key"><span class="color-box" style="background-color: rgba(153, 102, 255, 0.2);"></span> Thursday</div>
+      <div class="key"><span class="color-box" style="background-color: rgba(255, 159, 64, 0.2);"></span> Friday</div>
+      <div class="key"><span class="color-box" style="background-color: rgba(201, 203, 207, 0.2);"></span> Saturday</div>
+    </div>    
+    <div id="sessionsContainer"></div>
+  </div>
+  <script src="../js/Settings.js"></script>
+</body>
+</html>

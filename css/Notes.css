@@ -1,0 +1,186 @@
+body {
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+    margin: 0;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.container {
+  max-width: 800px; 
+  height: 560px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+
+#goBack {
+    align-self: left;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #6e8efb;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-weight: 600;
+  }
+  
+  #goBack:hover {
+    background-color: #5d5fef;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+h1 {
+    /*background: linear-gradient(135deg, #6e8efb, #a777e3);*/
+    background-color: #5d5fef;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 10px 0; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+
+button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    background-color: #6e8efb;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #5d5fef;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#notesListContainer {
+    margin-top: 20px; 
+}
+
+#notesList {
+    list-style-type: none; 
+    padding: 0;
+}
+
+#notesList li {
+    background: #ffffff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#notesList li:hover {
+    background-color: #f0f0f0; 
+}
+
+#notesList li:active {
+    background-color: #e0e0e0; 
+}
+
+#noteTitle {
+    display: block; 
+    width: calc(100% - 40px);
+    margin: 20px auto 10px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    outline: none; 
+}
+
+.note-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative; 
+    background: #ffffff;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+
+.note-item:last-child {
+    border-bottom: none;
+}
+
+.note-item.expanded .content {
+    display: block; 
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+
+.delete-btn {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    padding: 3px 6px; 
+    font-size: 0.75rem; 
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center; 
+    width: auto; 
+    min-width: 50px; 
+    box-sizing: border-box;
+}
+
+.delete-btn:hover {
+    background-color: #e53e30; 
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        width: 100%;
+        border-radius: 5px;
+    }
+    h1 {
+        font-size: 1.5rem; 
+    }
+    button {
+        padding: 8px 20px;
+    }
+}

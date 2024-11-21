@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/SettingsButton.css">
+    <link rel="stylesheet" href="../css/Themes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="goBack" href="#">
+        Back
+    </a>
+    <div class="settings-container">
+        <div id="themeSelection">
+            <label for="themeSelect">Select Theme:</label>
+            <select id="themeSelect">
+              <option value="default">Default</option>
+              <option value="dark">Dark</option>
+              <option value="warm">Warm</option>
+            </select>
+          </div>
+        <div class="setting-item">
+            <span>Enable Notifications</span>
+            <label class="toggle-switch">
+                <input type="checkbox" class="toggle-input" checked>
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+        <!--<div class="setting-item">
+            <span>Auto Sync</span>
+            <label class="toggle-switch">
+                <input type="checkbox" class="toggle-input">
+                <span class="toggle-slider"></span>
+            </label>
+        </div>-->
+        <div id="notifPreference">
+            <label for="notifSelect">Calendar Notification Time:</label>
+            <select id="notifSelect">
+              <option value="minute">Minute</option>
+              <option value="hour">Hour</option>
+              <option value="day">Day</option>
+            </select>
+        </div>
+    </div>
+    <script src="../js/Settings.js"></script>
+    <script src="../js/background.js"></script>
+</body>
+</html>

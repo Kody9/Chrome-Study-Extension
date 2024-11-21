@@ -1,0 +1,27 @@
+{
+  "name": "chartjs-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.11.0",
+    "parcel": "^2.6.2",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@cubejs-client/core": "^0.31.0",
+    "chart.js": "^4.4.2"
+  },
+  "description": "> Jonathan DeGrasse, Kody Norsworthy, Martin Mendoza, and DJ Pantalone is creating Computivity, a powerful web extension designed to enhance study habits and boost productivity. This tool tracks off-task moments during study sessions, providing users with valuable insights into their study patterns. Computivity aims to help students achieve better grades by understanding and optimizing their study habits. The primary audience for Computivity is students. Whether high school or college, Computivity is tailored to assist students in gaining a deeper understanding of their study habits, minimizing distractions, and improving academic performance. The team is driven by the goal of making a significant impact on students' academic lives. Computivity aims to empower students to make better grades by  offering insights into their study habits. By providing personalized study plans, real-time notifications, and collaborative features, the team hopes to foster positive changes in how students approach their studies.",
+  "main": "webpack.config.js",
+  "keywords": [],
+  "author": ""
+}

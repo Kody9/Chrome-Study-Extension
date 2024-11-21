@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Reminder</title>
+    <link rel="stylesheet" href="../css/breakReminder.css">
+    <link rel="stylesheet" href="../css/Themes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a id="goBack" href="#">
+    Back
+  </a>
+  <div class="container">
+    <h2>Set Your Break Interval</h2>
+    <p>Your current interval is: <span id="currentIntervalDisplay">25</span> minutes.</p>
+    <form id="intervalForm">
+        <label for="breakInterval">Enter break interval (minutes):</label>
+        <input type="number" id="breakInterval" name="breakInterval" min="1" required>
+        <button type="submit">Set Interval</button>
+    </form>
+    <p id="statusMessage"></p>
+  </div>
+
+    <div class="container">
+        <p>Enhance your study efficiency with our Break Reminder system! It thoughtfully notifies you after a customizable period of focused study, suggesting the perfect time to take a rejuvenating break. This not only helps in maintaining your concentration but also supports your overall well-being by encouraging balance between work and rest.</p>
+    </div>
+
+    <div class="container">
+        <div class="status" id="reminderStatus">Reminder: OFF</div>
+        <button id="toggleReminder" class="reminderOff">Toggle Break Reminder</button>
+    </div>
+
+    <script src="../js/breakReminder.js"></script>
+    <script src="../js/Settings.js"></script>
+</body>
+</html>

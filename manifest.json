@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Computivity Extension",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage",
+    "webNavigation",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "declarativeNetRequest", 
+    "declarativeNetRequestFeedback"
+  ],
+
+  "host_permissions": [
+    "<all_urls>",
+    "*://en.wikipedia.org/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/contentScript.js", "js/Achievements.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "action": {
+    "default_popup": "html/interface.html",
+    "default_icon": "images/image.png"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  }
+}
